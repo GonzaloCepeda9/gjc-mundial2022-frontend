@@ -1,0 +1,85 @@
+/* Inicio de estilo para ESCRITORIO */
+
+.contenedor-header {
+  height: 160px;
+  width: 100%;
+  padding: 20px 0;
+  background: url(../../../imagenes/FondoHeader2.png), no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #f0f8ff;
+}
+
+.header-titulo {
+  color: #acb4bc;
+  font-family: 'Mouse Memoirs', sans-serif;
+  letter-spacing: 5px;
+  font-size: 40px;
+  margin-left: 32px;
+  text-shadow: 2px 2px 1px #000;
+}
+
+/* Fin de estilo para ESCRITORIO */
+
+
+/* Inicio de estilo RESPONSIVE para CELULAR */
+
+@media screen and (max-width: 480px) { 
+
+  .contenedor-header {
+    height: calc(160px * 0.7);
+    flex-direction: column;
+  }
+
+  .header-logo {
+    width: calc(128px * 0.7);
+    height: calc(128px * 0.7);
+    box-shadow: 0 0 3px #f0f8ff;
+  }
+  
+  .header-titulo {
+    margin: 8px 0;
+    letter-spacing: 3px;
+    font-size: calc(40px * 0.6);
+    text-shadow: 2px 2px 1px #000;
+  }
+  
+}
+
+/* Fin de estilo para CELULAR */
+
+
+/* Inicio de estilo RESPONSIVE para TABLET */
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+  .contenedor-header {
+    height: calc(160px * 0.9);
+    width: 100%;
+  }
+
+  .header-logo {
+    width: calc(128px * 0.9);
+    height: calc(128px * 0.9);
+    box-shadow: 0 0 4px #f0f8ff;
+  }
+  
+  .header-titulo {
+    margin-left: calc(32px * 0.9);
+    letter-spacing: 4px;
+    font-size: calc(40px * 0.9);
+    text-shadow: 2px 2px 1px #000;
+  }
+  
+}
+
+/* Fin de estilo para TABLET */

@@ -1,0 +1,18 @@
+.contenedor-novedad {
+  text-align: left;
+  padding: 0 16px;
+}
+
+.contenedor-novedad-imagen {
+  width: 100%;
+  display: flex;
+}
+
+.imagen-novedad {
+  width: 100%;
+  object-fit: cover;
+}
+
+hr {
+  margin: 32px 0;
+}

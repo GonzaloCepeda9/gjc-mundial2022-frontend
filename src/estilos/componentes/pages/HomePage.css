@@ -1,0 +1,40 @@
+.contenedor-home {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-home-imagen {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.imagen-home {
+  width: 100%;
+  height: 100%;
+}
+
+
+.resultados-lista {
+  list-style-position: inside;
+}
+
+.resultados-lista li {
+  list-style-type: circle;
+  margin: 4px;
+  text-align: center;
+}
+
+.contenedor-texto {
+  width: 100%;
+  padding: 8px 0;
+  text-align: left;
+}
+
+.texto-resultados {
+  text-align: center;
+}
