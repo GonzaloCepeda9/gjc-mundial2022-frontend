@@ -13,7 +13,7 @@ function NovedadesPage (props) {
     const cargarNovedades = async () => {
       setLoading(true);
 
-      var response = await axios.get("http://localhost:3000/api/novedades");
+      var response = await axios.get(axios.get(`${process.env.REACT_APP_API_URL}/api/novedades`));
 
       setNovedades(response.data);
       setLoading(false);
