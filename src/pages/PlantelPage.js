@@ -14,7 +14,7 @@ function PlantelPage (props) {
     const cargarPlantel = async () => {
       setLoading(true);
 
-      var response = await axios.get(axios.get(`${process.env.REACT_APP_API_URL}/api/plantel`));
+      var response = await axios.get(`${process.env.REACT_APP_API_URL}/api/plantel`);
 
       setPlantel(response.data);
       setLoading(false);
