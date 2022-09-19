@@ -89,6 +89,7 @@ nav ul li a {
     background-color: #072d4f;
     list-style-type: none;
     transition: all 0.25s;
+    z-index: 10;
 
     /* list-style-type: none;
     margin-top: 0;
