@@ -17,10 +17,11 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.1",
     "sweetalert": "^2.1.2",
+    "vue": "^3.2.39",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "env-cmd -f .env react-scripts start",
+    "start": "mkdir dist && cp node_modules/vue/dist/vue.js dist/vue.js && cp node_modules/axios/dist/axios.js dist/axios.js && cp index.html dist/index.html",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

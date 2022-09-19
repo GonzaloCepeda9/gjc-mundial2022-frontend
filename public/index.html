@@ -34,6 +34,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Poppins:wght@200&family=Proza+Libre:ital@0;1&display=swap" rel="stylesheet">
     <title>React App</title>
+
+
+    <!-- Heroku con Netlify -->
+    <script type="text/javascript" src="vue.js"></script>
+    <script type="text/javascript" src="axios.js"></script>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -48,5 +54,23 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    
+    <!-- Heroku con Netlify -->
+    <script type="text/javascript">
+      new Vue({
+        el: '#app',
+        data: {
+            src: ''
+        },
+        mounted(){
+          var vm = this
+          axios.get('http://localhost:3000/api')
+            .then(data => {
+              vm.src = JSON.stringify(data.data)
+            })
+        }
+      })
+    </script>
   </body>
 </html>
