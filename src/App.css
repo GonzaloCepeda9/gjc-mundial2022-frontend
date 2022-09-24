@@ -62,21 +62,21 @@ h4 {
 
   .titulo-seccion {
     font-family: 'Proza Libre', sans-serif;
-    font-size: calc(28px * 0.8);
-    margin: 13px 0;
+    font-size: calc(28px * 0.7);
+    margin: 12px 0;
     text-shadow: 0.5px 0.5px 2px #fff;
   }
   
   .contenedor-principal {
-    font-size: 13px;
+    font-size: 12px;
   }
   
   h3 {
-    font-size: calc(20px * 0.8);
+    font-size: calc(20px * 0.7);
   }
   
   h4 {
-    margin: 13px 0;
+    margin: 12px 0;
   }
 
 }
