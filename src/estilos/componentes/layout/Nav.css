@@ -95,7 +95,7 @@ nav ul li a {
   }
 
   .nav-lista--show li {
-    font-size: calc(16px * 0.7);
+    font-size: calc(12px);
   }
 
 }
