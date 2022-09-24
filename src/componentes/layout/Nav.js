@@ -8,21 +8,21 @@ import "../../estilos/componentes/layout/Nav.css";
 function Nav () {
   
   function ShowWindowWidth() {
-  const [width, setWidth] = useState(0);
+    const [width, setWidth] = useState(0);
 
-  useEffect(() => {
-    // Creamos una función para actualizar el estado con el clientWidth
-    const updateWidth = () => {
-      const width = document.body.clientWidth
-      setWidth(width)
-    }
-    // Actualizaremos el width al montar el componente
-    updateWidth()
-    // Nos suscribimos al evento resize() de window
-    window.addEventListener("resize", updateWidth)
-  })
-  return width;
-}
+    useEffect(() => {
+      // Creamos una función para actualizar el estado con el clientWidth
+      const updateWidth = () => {
+        const width = document.body.clientWidth
+        setWidth(width)
+      }
+      // Actualizaremos el width al montar el componente
+      updateWidth()
+      // Nos suscribimos al evento resize() de window
+      window.addEventListener("resize", updateWidth)
+    })
+    return width;
+  }
 
   const [clicked, setClicked] = useState(false);
 
